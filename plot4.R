@@ -52,7 +52,7 @@ smalldata$newdate <-newtime
 ##Final graph
 attach(smalldata)
 par(mfrow =c(2,2))
-par(mar=c(5, 5, 4,3))
+par(mar=c(4, 4, 4,3))
 {plot(newdate, Global_active_power, type ="l", 
 	ylab = "Global Active Power (kilowatts)", xlab = " " )
 plot(newdate, Voltage, type ="l", xlab = "datetime" )}
@@ -60,7 +60,7 @@ plot(newdate, Sub_metering_1, type ="l",
 	ylab = "Energy sub metering", xlab = " " )
 points(newdate, Sub_metering_2, type ="l", col="red")
 points(newdate, Sub_metering_3, type ="l", col="blue")
-legend("topright", lty=1, col=c("black","red","blue"), legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+legend("topright", lty =1, bty="n", inset = .1, cex=.75, col=c("black","red","blue"), legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 plot(newdate, Global_reactive_power, type ="l", 
 	xlab = "datetime" )
 

@@ -56,7 +56,7 @@ with(smalldata, plot(newdate, Sub_metering_1, type ="l",
 	ylab = "Energy sub metering", xlab = " " ))
 with(smalldata, points(newdate, Sub_metering_2, type ="l", col="red"))
 with(smalldata, points(newdate, Sub_metering_3, type ="l", col="blue"))
-legend("topright", lty=1, col=c("black","red","blue"), legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
+legend("topright", lty=1, cex=.75, col=c("black","red","blue"), legend=c("Sub_metering_1","Sub_metering_2","Sub_metering_3"))
 
 plot3.png <- dev.copy(png, width =480, height = 480, units="px")
 
